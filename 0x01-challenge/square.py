@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""class"""
+
 
 class square():
+    """Ä square"""
+
     
     size = 0
-
     
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
@@ -20,7 +23,6 @@ class square():
         return "{}/{}".format(self.size, self.size)
 
 if __name__ == "__main__":
-
     s = square(size=12)
     print(s)
     print(s.area_of_my_square())
